@@ -30,3 +30,18 @@ Return JSX to provide Context
 
 ------------------------------------------------ import { useContext } from 'react'
 To get Context Data from imported Context-Data Component
+
+///////////////////////////////////////////////////////////////////////////////////////
+
+## 3 Toggling Favorites with the Context API
+
+- "products.context.js" (Context API)
+  => { useState } to get/filter all Favorite products
+  => Created toggleFavorite function
+
+- "./components/Products/ProductItem.js"
+  => { useContext } to get Context Function to toggle Favorite Products
+
+- "./container/Favorites.js"
+  => Replacing Redux with our Context API
+  => { useContext } to get "isFavorite" products from the Context
