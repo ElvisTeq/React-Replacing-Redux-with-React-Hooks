@@ -1,0 +1,32 @@
+## 1 Using Context to replace Redux
+
+- Created
+  => "context" (Folder)
+  => "products.context.js" (File)
+
+///////////////////////////////////////////////////////////////////////////////////////
+
+## 2 Using the Context API
+
+- "products.context.js"
+  => implemented { React.createContext() } To create Context Data
+  => <AnyName.Provider> To provide Context Data
+
+- "index.js"
+  => Replacing Redux with the created Context Provider
+
+- "./containers/Products.js"
+  => Importing out Context Provider Data
+  => { useContext } to get our importer Context Data
+
+- "./components/Products/ProductItem.js"
+  => Removed Redux Code
+
+------------------------------------------------ React.createContext({})
+To create Context
+
+------------------------------------------------ <anyName.Provide> {props.children} </anyName.Provide>
+Return JSX to provide Context
+
+------------------------------------------------ import { useContext } from 'react'
+To get Context Data from imported Context-Data Component
