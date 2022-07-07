@@ -7,8 +7,8 @@ let actions = {}; // functions
 export const useStore = () => {
   const setState = useState(globalState)[1]; // [1] => [state, setState] (to get "setState" function)
 
-  const dispatch = (actionIdenfifier) => {
-    const newState = actions[actionIdenfifier](globalState);
+  const dispatch = (actionIdenfifier, payload) => {
+    const newState = actions[actionIdenfifier](globalState, payload);
     globalState = { ...globalState, ...newState };
 
     for (const listener of listeners) {

@@ -52,3 +52,11 @@ To get Context Data from imported Context-Data Component
 
 - "./hook-store/store.js" (created)
   => Creating our Custom Hook
+
+///////////////////////////////////////////////////////////////////////////////////////
+
+## 5 Creating a Concrete Store
+
+- "./hook-store/product-store.js"
+  => Contains Init Data
+  => TOGGLE_FAV functionality
