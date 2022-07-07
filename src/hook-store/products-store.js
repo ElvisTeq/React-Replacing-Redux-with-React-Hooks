@@ -19,7 +19,7 @@ const configureStore = () => {
     },
   };
 
-  // Default Store
+  // Function from "store.js" => (stores data & actions)
   initStore(actions, {
     products: [
       {

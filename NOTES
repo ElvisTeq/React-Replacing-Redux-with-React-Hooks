@@ -76,3 +76,17 @@ To get Context Data from imported Context-Data Component
 
 - "Favorites.js"
   => Using Custom Hook [state] [0] to get data & .filter "isFavorite"
+
+///////////////////////////////////////////////////////////////////////////////////////
+
+## 7 Optimizing the Custom Hook Store
+
+- All Items are re-rendering unnecessaryly when toggling one item
+
+* "./components/ProductItem.js"
+  => using { react.memo } to re-render if there are changes
+
+* "store.js"
+  => Adding (true/false) to "useStore"
+  => if false => do not call [setState]
+  => Implemented with { useEffect }
