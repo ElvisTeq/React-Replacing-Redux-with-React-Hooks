@@ -60,3 +60,19 @@ To get Context Data from imported Context-Data Component
 - "./hook-store/product-store.js"
   => Contains Init Data
   => TOGGLE_FAV functionality
+
+///////////////////////////////////////////////////////////////////////////////////////
+
+## 6 Using the Custom Store
+
+- "index.js"
+  => Adding Custom Hook to our app
+
+- "./container/Products.js"
+  => Using Custom Hook [state] [0] to get data
+
+- "./component/Products/ProductItem.js"
+  => Using Custom Hook [dispatch] [1] to TOGGLE_FAV
+
+- "Favorites.js"
+  => Using Custom Hook [state] [0] to get data & .filter "isFavorite"

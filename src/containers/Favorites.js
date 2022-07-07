@@ -1,14 +1,12 @@
 import React, { useContext } from "react";
 
 import FavoriteItem from "../components/Favorites/FavoriteItem";
-import { ProductsContext } from "../context/products-context";
+import { useStore } from "../hook-store/store";
 import "./Products.css";
 
 const Favorites = (props) => {
-  // Get all "isFavorite" Products
-  const favoriteProducts = useContext(ProductsContext).products.filter(
-    (p) => p.isFavorite
-  );
+  const state = useStore()[0]; // Get all Data
+  const favoriteProducts = state.products.filter((p) => p.isFavorite); // Filter Favorite Data
 
   let content = <p className="placeholder">Got no favorites yet!</p>;
   if (favoriteProducts.length > 0) {

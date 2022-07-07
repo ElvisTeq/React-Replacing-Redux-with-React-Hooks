@@ -2,6 +2,7 @@ import { initStore } from "./store"; // Custom Hook expects (action, initialData
 
 const configureStore = () => {
   const actions = {
+    // if dispatch('TOGGLE_FAV')
     TOGGLE_FAV: (curState, productId) => {
       const prodIndex = curState.products.findIndex((p) => p.id === productId); // Find pruduct by ID
 
@@ -18,6 +19,7 @@ const configureStore = () => {
     },
   };
 
+  // Default Store
   initStore(actions, {
     products: [
       {
