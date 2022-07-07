@@ -45,3 +45,10 @@ To get Context Data from imported Context-Data Component
 - "./container/Favorites.js"
   => Replacing Redux with our Context API
   => { useContext } to get "isFavorite" products from the Context
+
+///////////////////////////////////////////////////////////////////////////////////////
+
+## 4 Creating Custom Hooks
+
+- "./hook-store/store.js" (created)
+  => Creating our Custom Hook
